@@ -1,0 +1,12 @@
+package Adapter;
+
+public class CashToTransfer extends Cash{
+	private Transfer transfer;
+
+	public CashToTransfer(double price) {
+		super(price);
+		this.transfer = new Transfer(price;);
+	}
+	
+	
+}

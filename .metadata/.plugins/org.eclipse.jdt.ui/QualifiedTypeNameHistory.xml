@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Controller.ProductController"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="View.Main"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="model.NonElectronic"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="model.Electronic"/>
+    <fullyQualifiedTypeName name="Factory.ProductFactory"/>
+    <fullyQualifiedTypeName name="model.Customer"/>
+    <fullyQualifiedTypeName name="Adapter.Cash"/>
+    <fullyQualifiedTypeName name="Adapter.CashToTransfer"/>
+    <fullyQualifiedTypeName name="Adapter.CashToQris"/>
+    <fullyQualifiedTypeName name="Database.Connect"/>
+    <fullyQualifiedTypeName name="model.Product"/>
+    <fullyQualifiedTypeName name="model.Order"/>
+    <fullyQualifiedTypeName name="Factory.OrderFactory"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,22 @@
+package Factory;
+
+import Database.Connect;
+import model.Order;
+import model.Product;
+
+public class OrderFactory {
+	static Connect db = Connect.getInstance();
+	
+	
+	//create
+	public static Order createOrder(String id,String customer,Product product,int quantity,String paymentType,double price) {
+		return new Order(id, customer, product, quantity, paymentType, price);
+	}
+	
+	//read
+	public static void viewOrder() {
+		
+	}
+	
+	
+}

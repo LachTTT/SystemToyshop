@@ -1,0 +1,28 @@
+package Database;
+
+import java.util.ArrayList;
+import model.Product;
+
+public class Connect {
+	private ArrayList<Product> productList;
+	private static volatile Connect instance = null;
+	
+	private Connect() {
+		productList = new ArrayList<>();
+	}
+	
+	public static Connect getInstance() {
+		if(instance == null) {
+			synchronized (Connect.class) {
+				if(instance == null) {
+					instance = new Connect();
+				}
+			}
+		}
+		return instance;
+	}
+	
+	public void addProduct(Product p) {
+		productList.add(p);
+	}
+}

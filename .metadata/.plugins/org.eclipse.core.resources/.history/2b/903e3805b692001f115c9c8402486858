@@ -1,0 +1,11 @@
+package Adapter;
+
+public class CashToQris extends Cash{
+	private Qris qris;
+
+	public CashToQris(double price, Qris qris) {
+		super(price);
+		this.qris = new Qris(price);
+	}
+	
+}

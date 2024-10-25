@@ -1,0 +1,34 @@
+package Factory;
+
+import java.util.ArrayList;
+
+import Database.Connect;
+import model.Electronic;
+import model.NonElectronic;
+import model.Product;
+
+public class ProductFactory {
+	static Connect db = Connect.getInstance()
+	
+	public static Product createProduct(String type,String name,String id,int stock,int battery,double price) {
+		if(type.equals("Electronic")) {
+			return new Electronic(id, name, price, stock, battery);
+			
+		}else if(type.equals("NonElectronic")) {
+			return new NonElectronic(id, name, price, stock);
+		}
+		return null;
+	}
+	
+	
+	public static Product viewProduct() {
+		
+		if(product.isEmpty()) {
+			System.out.println("IS Empty");
+		}else {
+			System.out.println("PRoduct ID :");
+		}
+		
+		return null;
+	}
+}

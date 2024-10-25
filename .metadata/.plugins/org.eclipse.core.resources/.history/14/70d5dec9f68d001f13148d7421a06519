@@ -1,0 +1,53 @@
+package Database;
+
+import java.util.ArrayList;
+
+import model.Electronic;
+import model.Product;
+
+public class Connect {
+	private ArrayList<Product> productList;
+	private static volatile Connect instance = null;
+	
+	private Connect() {
+		productList = new ArrayList<>();
+	}
+	
+	public static Connect getInstance() {
+		if(instance == null) {
+			synchronized (Connect.class) {
+				if(instance == null) {
+					instance = new Connect();
+				}
+			}
+		}
+		return instance;
+	}
+	
+	public void addProduct(Product p) {
+		productList.add(p);
+		System.out.println("Product Added!!");
+	}
+	
+	public void viewProduct() {
+		if(productList.isEmpty()) {
+			System.out.println("No Product");
+		}else {
+			System.out.println("==============================================");
+			for(Product p : productList) {
+				System.out.println("ID : "+p.getId());
+				System.out.println("Name :"+p.getName());
+				System.out.println("Price : "+ p.getPrice());
+				System.out.println("Stock : "+ p.getStock());
+				System.out.println("Type: " + p.getClass().getSimpleName());
+				if(p instanceof Electronic) {
+					Electronic e = (Electronic) p;
+					System.out.println("Battery : "+e.getBattery());
+				}else {
+					System.out.println("Battery: - ");
+				}
+				System.out.println("==============================================");
+			}
+		}
+	}
+}

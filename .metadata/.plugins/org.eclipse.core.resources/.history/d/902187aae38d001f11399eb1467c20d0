@@ -1,0 +1,9 @@
+package Factory;
+
+import model.Product;
+
+public class ProductFactory {
+	public static Product createProduct(String type,String name,String id,int stock,int battery,double price) {
+		
+	}
+}

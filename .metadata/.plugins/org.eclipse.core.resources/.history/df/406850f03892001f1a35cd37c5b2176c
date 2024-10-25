@@ -1,0 +1,12 @@
+package model;
+
+public class Order {
+
+	private String id;
+	private String customer;
+	private Product product;
+	private int quantity;
+	private String paymentType;
+	private double price;
+	
+}
